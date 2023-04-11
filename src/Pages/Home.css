@@ -1,0 +1,171 @@
+.HomeContainer {
+  background-color: #a7bcff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HomeSubContainer {
+  display: flex;
+  flex-direction: row;
+
+  border: 1px solid #f5f5f5;
+  overflow: hidden;
+  /* bahar jaane wala color radius ke andar aagya */
+  border-radius: 10px;
+  height: 85vh;
+  /* height: 85%; */
+  width: 75%;
+}
+
+.register-container,.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: auto;
+  background-color: white;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .RegisterMainContainer{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .register-container {
+       width: 300px;
+    margin: 0 auto;
+   
+     margin-top: 2rem;
+     margin-bottom: 2rem;  
+  }
+  .login-container {
+      width: 300px;
+    margin: 0 auto;
+     margin-top: 5rem;
+     margin-bottom: 5rem;  
+  }
+  .register-container>h2,.register-container>span,.login-container>h2,.login-container>span{
+    font-family: "Open Sans", sans-serif;
+  }
+  .register-container>span,.login-container>span{
+    margin-top: 0.01rem;
+  }
+
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* margin-bottom: 0.5rem; */
+}
+.form-group>span{
+   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+   border-bottom: 2px solid lightgray;
+
+
+}
+.selectRegister{
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+ border-bottom: 2px solid lightgray;
+ width: 100%;
+  /* background-color: #f2f2f2; */
+  width: 100%;
+  margin-top: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+
+}
+.form-group > input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+ border-bottom: 2px solid lightgray;
+  /* background-color: #f2f2f2; */
+  width: 100%;
+  margin-top: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.form-container >p{
+  color: #5d5b8d;
+  font-size: 12px;
+  margin-top: 0.7rem;
+}
+.form-container >p >a{
+  text-decoration: none;
+
+}
+.form-container > button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  margin-top: 0.3rem;
+  width: 50%;
+  border-radius: 0.25rem;
+  border: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  /* font-size: 1rem; */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container > button:hover {
+  background-color: #0069d9;
+}
+.App{
+  background-color: #a7bcff;
+}
+.firebaselogins{
+  padding: 1rem;
+  display: flex;
+  justify-content:space-between;
+  gap: 1rem;
+}
+
+
+@media screen and (max-width:805px) {
+  .HomeContainer {
+  background-color: #a7bcff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+.HomeSubContainer{
+  width: 95%;
+}
+  
+}
