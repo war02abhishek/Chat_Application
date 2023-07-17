@@ -68,6 +68,7 @@ const Register = () => {
                 })
                 .then(() => {
                   navigate('/');
+                   window.location.reload();
                 })
                 .catch(err => alert(err.message))
             }

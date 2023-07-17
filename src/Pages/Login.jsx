@@ -36,6 +36,7 @@ const Login = () => {
         console.log('Login successful', auth)
         localStorage.setItem('userToken', JSON.stringify(auth));
         navigate('/')//if it is sucessful
+        window.location.reload();
       })
       .catch(error => alert(error.message))
   };
